@@ -6,14 +6,15 @@
     align-items: center;
     justify-content: space-around;
     background-color: #1C2B35;
-    ;
-    
+    ;  
 }
 .childDiv a{
     text-decoration: none;
-    margin-right: 20px;
+    margin-right: 36px;
     color: white;
-
+    font-size: 17px;
+    transition: linear .2s;
 }
-li a{
+.childDiv a:hover{
+    color: rgb(218, 104, 24);
 }
