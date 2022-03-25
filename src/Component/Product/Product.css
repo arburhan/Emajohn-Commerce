@@ -39,4 +39,11 @@
     position: absolute;
     bottom: 0;
     margin-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.button-cart p{
+    margin: 10px 0px;
 }
