@@ -1,0 +1,20 @@
+.order-product {
+    display: flex;
+    align-items: center;
+    border: 1px solid slategray;
+    border-radius: 8px;
+    padding: 8px;
+    margin-top: 21px;
+    width: 571px;
+}
+
+.parent-cart-info {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.parent-cart-info p {
+    margin: 0;
+}
