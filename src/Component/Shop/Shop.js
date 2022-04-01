@@ -7,7 +7,7 @@ import Product from '../Product/Product';
 import './Shop.css';
 const Shop = () => {
     const [products, setProducts] = useProducts();
-    const [cart, setCart] = useCart();
+    const [cart, setCart] = useCart(products);
     const addToCart = (selectedProduct) => {
         let newCart = [];
         const existCart = cart.find(product => product.id === selectedProduct.id);
