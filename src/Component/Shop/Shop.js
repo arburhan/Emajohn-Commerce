@@ -1,4 +1,6 @@
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { addToDb, getStoredCart } from '../../utilities/fakedb';
 import CartCount from '../CartCount/CartCount';
 import useCart from '../Hooks/useCart';
@@ -31,7 +33,9 @@ const Shop = () => {
                 }
             </div>
             <div className="cart-container">
-                <CartCount cart={cart}></CartCount>
+                <CartCount cart={cart}>
+                    <Link to='/order'><button>Review Order <FontAwesomeIcon></FontAwesomeIcon></button></Link>
+                </CartCount>
             </div>
         </div>
     );

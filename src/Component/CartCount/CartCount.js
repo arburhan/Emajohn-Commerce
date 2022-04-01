@@ -1,10 +1,12 @@
 import React from 'react';
 import './CartCount.css';
-const CartCount = ({cart}) => {
+const CartCount = (props) => {
+    console.log(props.children);
+    const { cart } = props;
     let total = 0;
     let shipping = 0;
     let quantity = 0;
-    for(const product of cart){
+    for (const product of cart) {
         quantity = quantity + product.quantity;
         total = total + product.price * product.quantity;
         shipping = shipping + product.shipping;
@@ -14,13 +16,14 @@ const CartCount = ({cart}) => {
     return (
         <div className='cart' >
             <h2>Order Summary</h2>
-                <div>
-                    <p>Selected items: {quantity}</p>
-                    <p>Total price: ${total}</p>
-                    <p>Total Shipping Charge: ${shipping}</p>
-                    <p>Tax: ${tax}</p>
-                    <p className='grand-text'>Grand Total: ${grandTotal}</p>
-                </div>
+            <div>
+                <p>Selected items: {quantity}</p>
+                <p>Total price: ${total}</p>
+                <p>Total Shipping Charge: ${shipping}</p>
+                <p>Tax: ${tax}</p>
+                <p className='grand-text'>Grand Total: ${grandTotal}</p>
+            </div>
+            {props.children}
         </div>
     );
 };

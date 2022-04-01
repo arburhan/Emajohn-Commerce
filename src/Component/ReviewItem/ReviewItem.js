@@ -3,7 +3,9 @@ import './ReviewItem.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTrashAlt } from '@fortawesome/free-solid-svg-icons';
 
-const ReviewItem = ({ product, handleRemoveProduct }) => {
+const ReviewItem = (props) => {
+    const { product } = props;
+    const { handleRemoveProduct } = props;
     const { img, name, price, shipping, quantity } = product;
     return (
         <div className='order-product'>
