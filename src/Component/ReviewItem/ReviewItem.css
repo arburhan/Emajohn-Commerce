@@ -11,10 +11,28 @@
 .parent-cart-info {
     width: 100%;
     display: flex;
-    align-items: center;
-    justify-content: space-around;
+    justify-content: space-between;
+    padding: 0px 18px;
 }
 
 .parent-cart-info p {
     margin: 0;
+}
+
+.delete-button {
+    display: flex;
+    align-items: center;
+}
+
+.delete-button button {
+    height: 55px;
+    width: 55px;
+    border-radius: 50%;
+    border: #EB5757;
+    background-color: rgba(235, 87, 87, 0.3);
+}
+
+.delte-icon {
+    color: #EB5757;
+    font-size: 27px;
 }
