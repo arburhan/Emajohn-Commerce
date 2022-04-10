@@ -11,11 +11,11 @@ const Navbar = () => {
         <div className='parentDiv' >
             <Link to="/home"> <img src={logo} alt="" /> </Link>
             <div className='childDiv' >
-                <span> <Link to='/order'>Order</Link> </span>
-                <span> <Link to='/order-review'>Review Order</Link> </span>
-                <span> <Link to='/manage-inventory'>Manage Inventory</Link>
-                </span>
-                <span> <Link to='/about'>About</Link> </span>
+                <Link to='/order'>Order</Link>
+                <Link to='/order-review'>Review Order</Link>
+                <Link to='/manage-inventory'>Manage Inventory</Link>
+                <Link to='/about'>About</Link>
+                <Link to='/login'>Log In</Link>
             </div>
         </div>
     );
