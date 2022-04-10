@@ -8,6 +8,7 @@ import ReviewOrder from './Component/ReviewOrder/ReviewOrder';
 import Shop from './Component/Shop/Shop';
 import About from './Component/About/About';
 import LogIn from './Component/LogIn/LogIn';
+import SignUp from './Component/SignUp/SignUp';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path='/manage-inventory' element={<Inventory></Inventory>}></Route>
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<LogIn></LogIn>}></Route>
+        <Route path='/signup' element={<SignUp></SignUp>}></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
