@@ -21,6 +21,15 @@ const LogIn = () => {
                 <p className='login-signup'>
                     New to Ema-John? <Link className='form-link' to="/signup">Create an account</Link>
                 </p>
+                <div className='hr-line'>
+                    <hr /> or <hr />
+                </div>
+                <div className='icon-group'>
+                    <button className='external-link'>Continue with google</button>
+                    <button className='external-link'>Continue with facebook</button>
+                    <button className='external-link'>Continue with microsoft</button>
+                </div>
+
             </div>
         </div>
     );

@@ -56,3 +56,34 @@
 .login-signup {
     margin: 10px 0px;
 }
+
+.hr-line {
+    display: flex;
+    justify-content: space-evenly
+}
+
+hr {
+    width: 145px;
+    border: 1px solid #95A0A7;
+}
+
+.external-link {
+    width: 415px;
+    height: 55px;
+    background-color: transparent;
+    border-radius: 5px;
+    border: 1px solid rgba(149, 160, 167, 1);
+    font-size: 20px;
+}
+
+.icon-group {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+
+.icons {
+    color: green;
+    width: 22px;
+    margin-right: 5px;
+}
