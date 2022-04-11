@@ -10,6 +10,7 @@ import About from './Component/About/About';
 import LogIn from './Component/LogIn/LogIn';
 import SignUp from './Component/SignUp/SignUp';
 import RequerAuth from './Component/RequerAuth/RequerAuth';
+import Shipment from './Component/Shipment/Shipment';
 
 function App() {
   return (
@@ -28,6 +29,11 @@ function App() {
         <Route path='/about' element={<About></About>}></Route>
         <Route path='/login' element={<LogIn></LogIn>}></Route>
         <Route path='/signup' element={<SignUp></SignUp>}></Route>
+        <Route path='/shipment' element={
+          <RequerAuth>
+            <Shipment></Shipment>
+          </RequerAuth>
+        }></Route>
         <Route path='*' element={<NotFound></NotFound>}></Route>
       </Routes>
     </div>
