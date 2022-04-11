@@ -16,7 +16,7 @@ const LogIn = () => {
                         <label htmlFor="password">Password</label>
                         <input type="password" name="password" id="" />
                     </div>
-                    <input className='form-submit' type="submit" value="Submit" />
+                    <input className='form-submit' type="submit" value="Log in" />
                 </form>
                 <p className='login-signup'>
                     New to Ema-John? <Link className='form-link' to="/signup">Create an account</Link>
