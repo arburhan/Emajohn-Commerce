@@ -13,16 +13,16 @@ const Orders = () => {
     const navigate = useNavigate();
     const handleRemoveProduct = product => {
         // jare click korechi seta bade sob gulare select korechi ete delete item bade kore baki gula oi array er moddhe chole jabe 
-        const rest = cart.filter(pd => pd.id !== product.id);
+        const rest = cart.filter(pd => pd._id !== product._id);
         setCart(rest);
         // remove from local storage
-        removeFromDb(product.id);
+        removeFromDb(product._id);
     }
     return (
         <div className='shop-container'>
             <div className='products-order-container'>
                 {
-                    cart.map(product => <ReviewItem key={product.id} product={product} handleRemoveProduct={handleRemoveProduct}></ReviewItem>)
+                    cart.map(product => <ReviewItem key={product._id} product={product} handleRemoveProduct={handleRemoveProduct}></ReviewItem>)
                 }
             </div>
             <div className='cart-container'>
